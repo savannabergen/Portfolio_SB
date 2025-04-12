@@ -52,7 +52,7 @@ function App() {
       <div className="content-container">
         {sortedSections.map(([key]) => (
           <div key={key} className={`section ${sections[key].show ? 'show' : ''}`}>
-            <Button variant="close" className="close-button" onClick={() => handleClose(key)}>×</Button>
+            <button className="close-button" onClick={() => handleClose(key)}>×</button>
             {key === 'basicInformation' && <BasicInformation />}
             {key === 'work' && <Work />}
             {key === 'skills' && <Skills />}
