@@ -4,9 +4,6 @@ FROM node:23-slim
 # Set the working directory in the container
 WORKDIR /bergen_savanna_final_site
 
-# Copy the .npmrc file to the working directory
-COPY .npmrc /root/.npmrc
-
 # Copy the package*.json files to the working directory
 COPY package*.json ./
 
