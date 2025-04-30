@@ -1,5 +1,5 @@
 {
-  "name": "@savannabergen/portfolio_sb",
+  "name": "savannagrace-dev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@savannabergen/react_library": "^0.1.1",
+    "@siavanna/ts_library": "^0.1.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

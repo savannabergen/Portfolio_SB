@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroImg } from '@savannabergen/react_library';
+import { HeroImg } from '@siavanna/ts_library';
 import styled from 'styled-components';
 
 const HeroImgContainer = styled.div`

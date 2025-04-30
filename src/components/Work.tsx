@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card } from '@savannabergen/react_library';
-import { Img } from '@savannabergen/react_library';
+import { Card } from '@siavanna/ts_library';
+import { Img } from '@siavanna/ts_library';
 
 const Work = () => {
   return (
@@ -11,7 +11,7 @@ const Work = () => {
         </div>
         <div>
           <h2 style={{ fontSize: '18px', fontWeight: '500', color: '#6c5ce7' }}>North Star Market</h2>
-          <p style={{ fontSize: '16px', color: '#666' }}>Description: A Canadian Ecommerce</p>
+          <p style={{ fontSize: '16px', color: '#666' }}>Description: Canadian Ecommerce</p>
         </div>
         <div>
           <p style={{ fontSize: '16px', color: '#666' }}>

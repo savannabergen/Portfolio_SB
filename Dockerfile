@@ -2,7 +2,7 @@
 FROM node:23-slim
 
 # Set the working directory in the container
-WORKDIR /bergen_savanna_final_site
+WORKDIR /final_site
 
 # Copy the package*.json files to the working directory
 COPY package*.json ./

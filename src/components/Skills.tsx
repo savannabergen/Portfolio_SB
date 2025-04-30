@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from '@savannabergen/react_library';
+import { Card } from '@siavanna/ts_library';
 
 const Skills = () => {
   return (

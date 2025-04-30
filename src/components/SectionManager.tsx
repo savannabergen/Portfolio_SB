@@ -3,7 +3,7 @@ import BasicInformation from './BasicInformation';
 import Work from './Work';
 import Skills from './Skills';
 import DeveloperSetup from './DeveloperSetup';
-import { Button } from '@savannabergen/react_library';
+import { Button } from '@siavanna/ts_library';
 
 const SectionManager = () => {
   const [sections, setSections] = useState({
