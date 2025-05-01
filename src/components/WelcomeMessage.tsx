@@ -10,7 +10,7 @@ const WelcomeMessageContainer = styled.div`
   margin-top: -20px;
 
   @media (max-width: 768px) {
-    margin-top: -100px;
+    margin-top: -150px;
   }
 `;
 
