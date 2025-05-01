@@ -22,3 +22,5 @@ const WelcomeMessage = () => {
     </WelcomeMessageContainer>
   );
 };
+
+export default WelcomeMessage;
