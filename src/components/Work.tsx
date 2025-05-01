@@ -19,14 +19,6 @@ const Work = () => {
             </a>
           </p>
         </div>
-        <div>
-          <h3 style={{ fontSize: '16px', fontWeight: '500', color: '#666' }}>Tech List:</h3>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            <li style={{ fontSize: '16px', color: '#666' }}>• Ruby on Rails</li>
-            <li style={{ fontSize: '16px', color: '#666' }}>• Postgresql</li>
-            <li style={{ fontSize: '16px', color: '#666' }}>• Render</li>
-          </ul>
-        </div>
       </div>
     </Card>
   );
