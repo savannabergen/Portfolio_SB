@@ -113,7 +113,30 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin-top: 0; /* removed negative margin */
+  margin-top: 0;
+}
+
+.welcome-message h1 {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  animation: slide-in 1s;
+}
+
+.welcome-message img {
+  vertical-align: middle;
+  animation: slide-in 1s;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero-img-container {

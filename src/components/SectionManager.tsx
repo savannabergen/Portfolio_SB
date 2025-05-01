@@ -14,7 +14,6 @@ const SectionManager = () => {
   });
 
   const handleClick = (section: string) => {
-    console.log('Button clicked:', section);
     setSections((prevSections) => {
       const newSections = { ...prevSections };
       newSections[section].show = true;
@@ -43,10 +42,7 @@ const SectionManager = () => {
   return (
     <div>
       <div className="button-container">
-        <Button onClick={(e) => {
-          console.log('Button clicked!');
-          handleClick('basicInformation');
-        }}>Basic Information</Button>
+        <Button onClick={() => handleClick('basicInformation')}>Basic Information</Button>
         <Button onClick={() => handleClick('work')}>Work</Button>
         <Button onClick={() => handleClick('skills')}>Skills</Button>
         <Button onClick={() => handleClick('developerSetup')}>Developer Setup</Button>

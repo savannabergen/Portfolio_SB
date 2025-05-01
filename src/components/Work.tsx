@@ -11,7 +11,6 @@ const Work = () => {
         </div>
         <div>
           <h2 style={{ fontSize: '18px', fontWeight: '500', color: '#6c5ce7' }}>North Star Market</h2>
-          <p style={{ fontSize: '16px', color: '#666' }}>Description: Canadian Ecommerce</p>
         </div>
         <div>
           <p style={{ fontSize: '16px', color: '#666' }}>
