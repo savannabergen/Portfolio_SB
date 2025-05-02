@@ -103,31 +103,12 @@ height: auto;
 object-fit: contain;
 }
 
-.open .menu-btn__burger {
-  background: transparent;
-  box-shadow: none;
-  transform: none; /* Remove the translateX(-50px) transform */
+.menu-btn__burger {
+  left: 0 !important;
 }
 
-.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(0, 0); /* Adjust the translate values */
-}
-
-.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(0, 0); /* Adjust the translate values */
-}
-
-.iNZiIM.open .fpJJpD {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.iNZiIM.open .fpJJpD::before {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-.iNZiIM.open .fpJJpD::after {
-  transform: rotate(-45deg) translate(6px, -6px);
+.menu-btn__burger::before, .menu-btn__burger::after {
+  left: 0 !important;
 }
 
 @media (max-width: 768px) {
