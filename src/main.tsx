@@ -6,7 +6,7 @@ document.title = 'Savanna\'s Portfolio';
 
 const metaImage = document.createElement('meta');
 metaImage.setAttribute('property', 'og:image');
-metaImage.content = './public/welcome.gif';
+metaImage.content = '/welcome.gif';
 document.head.appendChild(metaImage);
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

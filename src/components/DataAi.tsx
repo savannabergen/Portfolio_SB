@@ -5,7 +5,6 @@ const DataAi = () => {
     <section id="data-ai" className="section">
       <h2>Data & AI</h2>
       <p>Content about data and AI</p>
-      {/* Add more content here */}
     </section>
   );
 };
