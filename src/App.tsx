@@ -4,13 +4,21 @@ import WelcomeMessage from './components/WelcomeMessage';
 import WebDevelopment from './components/WebDevelopment';
 import SystemAnalysis from './components/SystemAnalysis';
 import DataAi from './components/DataAi';
-import { Hamburger } from '@siavanna/ts_library';
+import { Navbar } from '@siavanna/ts_library';
 import './index.css';
 
 const App = () => {
   return (
     <div className="portfolio">
       <OpeningSection />
+      <Navbar
+      title=""
+      links={[
+        { text: 'Home', href: '/' },
+        { text: 'About', href: '/about' },
+        { text: 'Contact', href: '/contact' },
+      ]}
+    />
       <WelcomeMessage />
       <div id="web-development">
         <WebDevelopment />
