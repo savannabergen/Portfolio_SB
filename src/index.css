@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light;
@@ -78,36 +78,37 @@ body {
 }
 
 @keyframes slide-in {
-0% {
-  transform: translateY(50px);
-  opacity: 0;
-}
-100% {
-  transform: translateY(0);
-  opacity: 1;
-}
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero-img-container {
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0;
-padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-img-container img {
-max-width: 100%;
-height: auto;
-object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .menu-btn__burger {
   left: 0 !important;
 }
 
-.menu-btn__burger::before, .menu-btn__burger::after {
+.menu-btn__burger::before,
+.menu-btn__burger::after {
   left: 0 !important;
 }
 
@@ -130,8 +131,8 @@ object-fit: contain;
 }
 
 @media (max-width: 768px) {
-.content-container {
-  flex-direction: column;
+  .content-container {
+    flex-direction: column;
   }
   .section {
     flex-basis: 100%;
