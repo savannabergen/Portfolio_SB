@@ -22,6 +22,7 @@ const App = () => {
       <div className="portfolio">
         <OpeningSection />
         <Navbar
+          theme="dark"
           links={[
             {
               text: "Web Development",
