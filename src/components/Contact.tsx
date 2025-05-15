@@ -19,15 +19,17 @@ const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const senderName = name; // Store the name value
     const templateParams = {
-      from_name: name,
-      from_email: email,
+      name: senderName,
+      email: email,
       message: message,
+      time: new Date().toLocaleString(),
     };
     emailjs.send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log('Email sent successfully', response.status, response.text);
-        setSentName(name);
+        setSentName(senderName);
         setSuccess(true);
         setName('');
         setEmail('');
@@ -66,17 +68,18 @@ const ContactForm = () => {
   ];
 
   return (
-  <>
-    <h1>Contact Me</h1>
-    <Form fields={fields} buttonText="Send Email" onSubmit={handleSubmit}>
-      {success && (
-        <>
-          <h2>Thank you, {sentName}!</h2>
-          <p>Email sent successfully!</p>
-        </>
-      )}
-    </Form>
-  </>
-);
-}
+    <>
+      <h1>Contact Me</h1>
+      <Form fields={fields} buttonText="Send Email" onSubmit={handleSubmit}>
+        {success && (
+          <>
+            <h2>Thank you, {sentName}!</h2>
+            <p>Email sent successfully!</p>
+          </>
+        )}
+      </Form>
+    </>
+  );
+};
+
 export default ContactForm;
