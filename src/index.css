@@ -111,6 +111,24 @@ object-fit: contain;
   left: 0 !important;
 }
 
+#contact {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  margin-top: 40px; /* add margin top */
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
 .content-container {
   flex-direction: column;
