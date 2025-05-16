@@ -1,6 +1,7 @@
 import React from "react";
 import OpeningSection from "./components/OpeningSection";
 import WelcomeMessage from "./components/WelcomeMessage";
+import PhotoGallery from "./components/PhotoGallery";
 import WebDevelopment from "./components/WebDevelopment";
 import SystemAnalysis from "./components/SystemAnalysis";
 import DataAi from "./components/DataAi";
@@ -24,50 +25,38 @@ const App = () => {
         <Navbar
           theme="dark"
           links={[
-            {
-              text: "Web Development",
-              href: "#",
-              onClick: () => handleLinkClick("web-development"),
-            },
-            {
-              text: "System Analysis",
-              href: "#",
-              onClick: () => handleLinkClick("system-analysis"),
-            },
-            {
-              text: "Data & AI",
-              href: "#",
-              onClick: () => handleLinkClick("data-ai"),
-            },
-            {
-              text: "Contact",
-              href: "#",
-              onClick: () => handleLinkClick("contact"),
-            },
+            { text: "Web Design", href: "#", onClick: () => handleLinkClick("web-development") },
+            { text: "Analysis", href: "#", onClick: () => handleLinkClick("system-analysis") },
+            { text: "Data & AI", href: "#", onClick: () => handleLinkClick("data-ai") },
+            { text: "Gallery", href: "#", onClick: () => handleLinkClick("photo-gallery") },
+            { text: "Contact", href: "#", onClick: () => handleLinkClick("contact") },
           ]}
         />
         <Routes>
-          <Route
-            path="*"
-            element={
-              <>
-                <WelcomeMessage />
-                <div id="web-development">
-                  <WebDevelopment />
-                </div>
-                <div id="system-analysis">
-                  <SystemAnalysis />
-                </div>
-                <div id="data-ai">
-                  <DataAi />
-                </div>
-                <div id="contact">
-                  <Contact />
-                </div>
-              </>
-            }
-          />
-        </Routes>
+  <Route
+    path="*"
+    element={
+      <>
+        <WelcomeMessage />
+        <div id="web-development">
+          <WebDevelopment />
+        </div>
+        <div id="system-analysis">
+          <SystemAnalysis />
+        </div>
+        <div id="data-ai">
+          <DataAi />
+        </div>
+        <div id="photo-gallery">
+          <PhotoGallery />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+      </>
+    }
+  />
+</Routes>
       </div>
     </BrowserRouter>
   );
