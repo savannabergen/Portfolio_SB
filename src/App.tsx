@@ -25,9 +25,9 @@ const App = () => {
         <Navbar
           theme="dark"
           links={[
-            { text: "Web Design", href: "#", onClick: () => handleLinkClick("web-development") },
+            { text: "Web", href: "#", onClick: () => handleLinkClick("web-development") },
             { text: "Analysis", href: "#", onClick: () => handleLinkClick("system-analysis") },
-            { text: "Data & AI", href: "#", onClick: () => handleLinkClick("data-ai") },
+            { text: "Data", href: "#", onClick: () => handleLinkClick("data-ai") },
             { text: "Gallery", href: "#", onClick: () => handleLinkClick("photo-gallery") },
             { text: "Contact", href: "#", onClick: () => handleLinkClick("contact") },
           ]}
